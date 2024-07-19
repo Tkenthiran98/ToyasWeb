@@ -11,6 +11,7 @@ import HomeDefaultProductListing from '~/components/partials/homepage/home-defau
 import HomeDefaultBanner from '~/components/partials/homepage/home-default/HomeDefaultBanner';
 import PageContainer from '~/components/layouts/PageContainer';
 import HeaderMobile from '~/components/shared/headers/HeaderMobile';
+import ShopByCharacter from '~/components/elements/skeletons/shop-by-character';
 
 const HomepageDefaultPage = () => {
     return (
@@ -22,17 +23,10 @@ const HomepageDefaultPage = () => {
                 <HomeDefaultDealOfDay collectionSlug="deal-of-the-day" />
                 <HomeAdsColumns />
                 <HomeDefaultProductListing
-                    collectionSlug="consumer-electronics"
+                    collectionSlug="Dolls"
                     title="Dolls"
                 />
-                {/* <HomeDefaultProductListing
-                    collectionSlug="Educational Toy"
-                    title="Educational Toy"
-                />
-                <HomeDefaultProductListing
-                    collectionSlug="Games and puzzle"
-                    title="Games and puzzle"
-                /> */}
+                <ShopByCharacter /> {/* Use self-closing tag for ShopByCharacter */}
                 <HomeAds />
                 <DownLoadApp />
                 <NewArrivals collectionSlug="new-arrivals-products" />
