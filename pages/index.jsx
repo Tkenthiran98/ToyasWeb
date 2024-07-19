@@ -12,6 +12,7 @@ import HomeDefaultBanner from '~/components/partials/homepage/home-default/HomeD
 import PageContainer from '~/components/layouts/PageContainer';
 import HeaderMobile from '~/components/shared/headers/HeaderMobile';
 import ShopByCharacter from '~/components/elements/skeletons/shop-by-character';
+import FeaturedProducts from '~/components/elements/skeletons/FeaturedProducts';
 
 const HomepageDefaultPage = () => {
     return (
@@ -27,7 +28,7 @@ const HomepageDefaultPage = () => {
                     title="Dolls"
                 />
                 <ShopByCharacter /> {/* Use self-closing tag for ShopByCharacter */}
-                <HomeAds />
+                <FeaturedProducts />                <HomeAds />
                 <DownLoadApp />
                 <NewArrivals collectionSlug="new-arrivals-products" />
                 <Newletters />
