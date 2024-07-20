@@ -2685,3 +2685,164 @@
     background-color: #ffd700;
     color: #000;
 }
+
+
+// Toystore styles
+.toyStore {
+    padding: 20px;
+}
+
+.header {
+    text-align: left;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.productGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.productCard2 {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 22%;
+    position: relative;
+    text-align: center;
+}
+
+.productCard img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.productCard .status {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ffd700;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #000;
+}
+
+.productCard .soldOut {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.productCard .price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.productCard .originalPrice {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.banner {
+    background-color: #ffd700;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 50px ;
+}
+
+.banner-content {
+    max-width: 50%;
+}
+
+.discount {
+    background-color: #fff200;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.banner-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.shopNowButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.banner-image {
+    position: relative;
+}
+
+.banner-image img {
+    border-radius: 8px;
+}
+
+.priceTag {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-hover-icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust transparency as necessary */
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.product-thumbnail:hover .product-hover-icons {
+    transform: translateX(0);
+}
+
+.hover-icon {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.hover-icon:hover {
+    color: #ff4d4f;
+}

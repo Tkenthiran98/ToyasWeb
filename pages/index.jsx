@@ -13,6 +13,8 @@ import PageContainer from '~/components/layouts/PageContainer';
 import HeaderMobile from '~/components/shared/headers/HeaderMobile';
 import ShopByCharacter from '~/components/elements/skeletons/shop-by-character';
 import FeaturedProducts from '~/components/elements/skeletons/FeaturedProducts';
+import ToyStore from '~/components/elements/skeletons/ToyStore'; 
+
 
 const HomepageDefaultPage = () => {
     return (
@@ -28,7 +30,9 @@ const HomepageDefaultPage = () => {
                     title="Dolls"
                 />
                 <ShopByCharacter /> {/* Use self-closing tag for ShopByCharacter */}
-                <FeaturedProducts />                <HomeAds />
+                <FeaturedProducts />   
+                <ToyStore /> {/* Add the ToyStore component here */}             
+                <HomeAds />
                 <DownLoadApp />
                 <NewArrivals collectionSlug="new-arrivals-products" />
                 <Newletters />
