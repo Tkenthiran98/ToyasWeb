@@ -14,8 +14,12 @@ import HeaderMobile from '~/components/shared/headers/HeaderMobile';
 import ShopByCharacter from '~/components/elements/skeletons/shop-by-character';
 import FeaturedProducts from '~/components/elements/skeletons/FeaturedProducts';
 import ToyStore from '~/components/elements/skeletons/ToyStore'; 
-
-
+import ProductCarousel from '~/components/elements/skeletons/ProductCarousel';
+import ShopByAge from '~/components/elements/skeletons/ShopByAge';
+import PopularBrand from '~/components/elements/skeletons/PopularBrand';
+import Banner from '~/components/elements/skeletons/Banner';
+import LatestNews from '~/components/elements/skeletons/LatestNews';
+ 
 const HomepageDefaultPage = () => {
     return (
         <PageContainer title="">
@@ -27,15 +31,18 @@ const HomepageDefaultPage = () => {
                 <HomeAdsColumns />
                 <HomeDefaultProductListing
                     collectionSlug="Dolls"
-                    title="Dolls"
-                />
+                    title="Dolls"/>
                 <ShopByCharacter /> {/* Use self-closing tag for ShopByCharacter */}
                 <FeaturedProducts />   
-                <ToyStore /> {/* Add the ToyStore component here */}             
+                <ToyStore /> {/* Add the ToyStore component here */}   
+                <ShopByAge /> {/* Corrected to self-closing tag */}
                 <HomeAds />
-                <DownLoadApp />
                 <NewArrivals collectionSlug="new-arrivals-products" />
-                <Newletters />
+                <PopularBrand />{/* Corrected to self-closing tag */}
+                <Banner/> {/* Corrected to self-closing tag */}
+                <LatestNews/>
+                <Newletters /> 
+                {/* <DownLoadApp /> */}
             </main>
         </PageContainer>
     );
